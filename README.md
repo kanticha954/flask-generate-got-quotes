@@ -1,4 +1,4 @@
-# Generate quote from Game of Throne 
+# Generate quote from Game of Thrones 
 ![build - Flask](https://img.shields.io/static/v1?label=build&message=Flask&color=%23FFC20E&logo=flask&logoColor=white)
 - Practice Flask project
 - Used API from: https://gameofthronesquotes.xyz/

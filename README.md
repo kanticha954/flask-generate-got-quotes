@@ -17,5 +17,6 @@ source venv/Scripts/activate
 
 Run
 ```sh
+cd app
 python app.py
 ```

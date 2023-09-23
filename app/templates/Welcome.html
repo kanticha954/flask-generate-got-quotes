@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Game of Thrones Quotes</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='welcome_page.css') }}">
+</head>
+<body>
+    <div class="centered">
+    <h1>Welcome to Game of Thrones Quotes</h1>
+    <p>Enter the number of quotes you want:</p>
+    <form method="POST" action="/result">
+        <input type="number" name="quat" placeholder="Number of quotes" required>
+        <input type="submit" value="Get Quotes">
+    </form>
+</div>
+</body>
+</html>

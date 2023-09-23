@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate GOT Quotes</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <h1>Game of Thrones Quotes:</h1>
+    <ul>
+        <!--Each quote-->
+        {% for quote in quotes %}
+        <li class="quote-item">
+            <div class="quote-container">
+            <blockquote>{{ quote['sentence'] }}</blockquote>
+            <p><strong>Character Name:</strong> {{ quote['character']['name'] }}</p>
+            <p><strong>Character Slug:</strong> {{ quote['character']['slug'] }}</p>
+            <p><strong>House Name:</strong> {{ quote['character']['house']['name'] }}</p>
+            <p><strong>House Slug:</strong> {{ quote['character']['house']['slug'] }}</p>
+            
+        </li></div>
+        {% endfor %}
+    </ul>
+</body>
+</html>
